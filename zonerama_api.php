@@ -79,8 +79,8 @@
         
         $dom = new DomDocument();
         $dom->loadHTML($val->html);
-        $height =250; //$val->height;
-        $width  =500; // $val->width;
+        $height = $val->height;
+        $width  = $val->width;
         
         foreach($dom->getElementsByTagName('a') as $link) {
             $img = $link->getElementsByTagName('img');
