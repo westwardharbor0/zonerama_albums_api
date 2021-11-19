@@ -62,7 +62,7 @@
     $html = file_get_contents('https://www.zonerama.com/'.$urlpostfix);
     $html = mb_convert_encoding($html, 'HTML-ENTITIES', "UTF-8");
     $start_substr = "var result =";
-    $end_substr = '"isEnd":true}';
+    $end_substr = '"isEnd"';
     $start = strpos($html, $start_substr);
     $end = strpos($html, $end_substr);
     $len = strlen($html);
